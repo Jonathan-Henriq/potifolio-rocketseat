@@ -183,6 +183,9 @@ section.direita2>div.card1>h2{
          margin-top: 16px;
          padding-left: 8px;
  }
+ section.direita2>div.card1>div.icone-inf-card>p.esp{
+   padding-left: 180px;
+ }
 
  section.direita2>div.card2>h2{
     font-size: 0.9em;
@@ -191,6 +194,17 @@ section.direita2>div.card1>h2{
     
     
  }
+
+ section.direita2>div.card2>div.icone-inf-card{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin-top: 16px;
+   padding-left: 8px;
+}
+section.direita2>div.card2>div.icone-inf-card>p.esp{
+padding-left: 180px;
+}
 
  section.direita2>div>p{
    padding: 8px 8px;
