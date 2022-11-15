@@ -19,8 +19,8 @@
     color: var(--text-color);
   }
 p{
-    font-size: 0.8em;
-    padding: 8px 8px;
+   font-size: 0.8em;
+    
 }
 
   main{
@@ -70,59 +70,34 @@ p{
     border-radius: 25px;
     overflow: hidden;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
-    
  }
 
- section>div.corpo>ul{
+ section>div.corpo>div{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 15px;
-    list-style-position: inside;
+    align-items: center;
     background-color: var(--bg-cards);
     color: var(--text-color);
     
     
  }
  
- section>div.corpo>ul>li{
-    padding: 15px 0px;
-    font-size: 0.8em;
-    
-    
-    
+ section>div.corpo>div{
+   padding: 0px 20px;
+   font-size: 0.8em;
     
  }
 
-
-
- div.corpo>ul>li.icon-local{
-    list-style-image: url(../imagens/map-pin.svg);
+ img.icone{
+   padding-right: 10px;
  }
 
- div.corpo>ul>li.icon-rocke{
-    list-style-image: url(../imagens/briefcase.svg);
- }
 
- div.corpo>ul>li.icon-git{
-    list-style-image: url(../imagens/github.svg);
- }
 
- div.corpo>ul>li.icon-linke{
-    list-style-image: url(../imagens/linkedin.svg);
- }
 
- div.corpo>ul>li.icon-site{
-    list-style-image: url(../imagens/globe.svg);
- }
-
- div.corpo>ul>li.icon-email{
-    list-style-image: url(../imagens/mail.svg);
- }
 
  section>div.rodape{
     width: 85%;
@@ -209,6 +184,11 @@ section.direita2>div.card1>h2{
     
  }
 
+ section.direita2>div>p{
+   padding: 8px 8px;
+   font-size: 0.7;
+ }
+
  section.direita2>div>img{
     height: 20px;
     padding-left: 8px;
@@ -256,6 +236,7 @@ div.recent>h2{
     width: 90%;
     height: 90%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -267,22 +248,23 @@ div.recent>h2{
  }
 
  section.direita4>div>img{
-    width: 220px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     border-radius: 20%;
     padding: 5px 10px;
     vertical-align: middle;
  }
 
  div.text>h2{
-    font-size: 1.1em;
-    width: 100%;
-    background-color: blueviolet;
+    font-size: .9em;
+    padding: 2px 2px ;
+    
     
 }
 
 div.text>p{
-    font-size: 0.9em;
-    display: inline-block;
+    font-size: 0.8em;
+    
+    
 }
 
