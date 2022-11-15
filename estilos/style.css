@@ -176,6 +176,14 @@ section.direita2>div.card1>h2{
     
  }
 
+ section.direita2>div.card1>div.icone-inf-card{
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         margin-top: 16px;
+         padding-left: 8px;
+ }
+
  section.direita2>div.card2>h2{
     font-size: 0.9em;
     display: inline-block;
