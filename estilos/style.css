@@ -18,6 +18,11 @@
   h1,h2,p{
     color: var(--text-color);
   }
+p{
+    font-size: 0.8em;
+    padding: 8px 8px;
+}
+
   main{
     height: 100vh;
     max-height: 100%;
@@ -27,13 +32,14 @@
 
 
  main>section.esquerda{
-    width: 30%;
+    width: 28%;
     height: 100vh;
     display: flex;
+    float: left;
     flex-direction: column;
     gap: 40px;
     align-items: center;
-    background-color: gray;
+    background-color: var(--body-bg-color);
     padding: 15px 0px;
  }
 
@@ -41,14 +47,14 @@
     width: 85%;
     height: 31%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 25px;
     border-radius: 25px;
     background-color: var(--bg-cards);
  }
 
  section.esquerda>div>img{
-    width: 45%;
-    height: 52%;
+    width: 35%;
+    height: 42%;
     border-radius: 50%;
     border: 3px solid #75fb4ce5;
  }
@@ -59,37 +65,43 @@
  }
 
  section>div.corpo{
-    background-color: blueviolet;
     width: 85%;
     height: 40%;
+    border-radius: 25px;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     
  }
 
  section>div.corpo>ul{
-    background-color: yellowgreen;
     width: 100%;
     height: 100%;
-    display: block;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 0px 15px;
     list-style-position: inside;
+    background-color: var(--bg-cards);
+    color: var(--text-color);
+    
     
  }
-
+ 
  section>div.corpo>ul>li{
-    padding: 17px 0px;
+    padding: 15px 0px;
     font-size: 0.8em;
     
     
+    
+    
  }
+
+
 
  div.corpo>ul>li.icon-local{
     list-style-image: url(../imagens/map-pin.svg);
-    
  }
 
  div.corpo>ul>li.icon-rocke{
@@ -113,7 +125,164 @@
  }
 
  section>div.rodape{
-    background-color: bisque;
     width: 85%;
     height: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 8px;
+    border-radius: 25px;
+    background-color: var(--bg-cards);
+    
  }
+
+ section>div.rodape>h2{
+    display: block;
+    width: 100%;
+    text-align: center;
+
+ }
+
+ section>div.rodape>span{
+    padding: 3px 3px;
+    border: 2px solid var(--bg-techs);
+    border-radius: 10px;
+    background-color: var(--bg-techs);
+    color: black;
+    
+ }
+
+ section.direita{
+    width: 72vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    float: right;
+    padding: 20px 20px;
+    background-color: var(--body-bg-color);
+    
+ }
+
+ section.direita>div.projetos{
+    width: 90%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 18px;
+    margin: 0px 50px;
+    border-radius: 15px;
+    background-color: var(--bg-cards);
+
+ }
+
+ section.direita>div.projetos>h1{
+    font-size: 1em;
+ }
+
+section.direita2{
+    width: 92%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding: 4px 4px;
+    margin: 10px 40px;
+    
+}
+
+section.direita2>div.card1>h2{
+    font-size: 0.9em;
+    display: inline-block;
+    padding-top: 45px;
+    
+    
+ }
+
+ section.direita2>div.card2>h2{
+    font-size: 0.9em;
+    display: inline-block;
+    padding-top: 45px;
+    
+    
+ }
+
+ section.direita2>div>img{
+    height: 20px;
+    padding-left: 8px;
+    vertical-align: middle;
+    
+    
+ }
+
+ section.direita2>div.card1{
+    width: 49%;
+    height: 100%;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--bg-cards);
+
+ }
+
+ 
+
+ section.direita2>div.card2{
+    width: 49%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--bg-cards);
+ }
+
+
+ section.direita3>div{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 18px;
+    margin: 0px 50px;
+    border-radius: 15px;
+    background-color: var(--bg-cards);
+
+ }
+div.recent>h2{
+    font-size: 1.1em;
+    display: inline-block;
+}
+ section.direita4>div{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 18px;
+    margin: 10px 50px;
+    border-radius: 15px;
+    background-color: var(--bg-cards);
+
+ }
+
+ section.direita4>div>img{
+    width: 220px;
+    height: 130px;
+    border-radius: 20%;
+    padding: 5px 10px;
+    vertical-align: middle;
+ }
+
+ div.text>h2{
+    font-size: 1.1em;
+    width: 100%;
+    background-color: blueviolet;
+    
+}
+
+div.text>p{
+    font-size: 0.9em;
+    display: inline-block;
+}
+
