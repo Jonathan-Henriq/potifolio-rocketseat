@@ -53,8 +53,8 @@ p{
  }
 
  section.esquerda>div>img{
-    width: 35%;
-    height: 42%;
+    width: 95px; /*35*/
+    height: 95px; /*42*/
     border-radius: 50%;
     border: 3px solid #75fb4ce5;
  }
@@ -105,9 +105,9 @@ p{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 3px 15px;
+    justify-content: center;
     align-items: center;
-    padding: 0px 8px;
     border-radius: 25px;
     background-color: var(--bg-cards);
     
@@ -117,16 +117,22 @@ p{
     display: block;
     width: 100%;
     text-align: center;
+    font-size: 1.2em;
 
  }
 
  section>div.rodape>span{
-    padding: 3px 3px;
-    border: 2px solid var(--bg-techs);
-    border-radius: 10px;
-    background-color: var(--bg-techs);
-    color: black;
+   padding: 5px 4px;
+   
+   border: 1px solid var(--bg-techs);
+   border-radius: 10px;
+   background-color: var(--bg-techs);
     
+    
+ }
+
+ section>div.rodape>span>p{
+   color: black;
  }
 
  section.direita{
